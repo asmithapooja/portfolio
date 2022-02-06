@@ -1,38 +1,559 @@
-.App {
-  text-align: center;
+
+:root {
+  --primary-white : #fff;
+  --primary-blue : #1E90FF;
+  --primary-dark : rgba(255,255,255,0);
+  --primary-darkblue : #191970;
+  --primary-royalblue : rgb(102,178,255);
+  --primary-orange : #f9ab00;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  width : 12.25rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+nav a.nav-link {
+  
+  cursor : pointer;
+  font-family : "Roboto Condesed" sans-serif !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-nav > li > a {
+  color : var(--primary-white) !important;
+  padding-right : 100px;
+  margin-right: 0.75rem;
+  margin-left : 0.74rem;
+  border-top : 0.1875rem solid var(--primary-dark)
+  
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+  border-top : 0.1875rem solid var(--primary-blue)
+}
+
+.navbar-nav > li > a:hover {
+  border-top : 0.1875rem solid var(--primary-blue)
+
+}
+
+.header-wrapper {
+  position : relative;
+  background: url(real2.jpg);
+  background-size: cover;
+  background-position : center;
+  height : 100vh;
+  opacity: 1;
+}
+
+.projects2 {
+  position : relative;
+  background-color : black;
+}
+
+.main-info {
   display: flex;
+  position : absolute;
+  top: 0;
+  bottom : 0;
+  right : 0;
+  left : 0;
+  flex-direction : column;
+  justify-content: center;
+  align-items : center;
+  text-align : center;
+  font-family : "Roboto Condesed" sans-serif !important;
+}
+
+.main-info h1{
+  color : var(--primary-royalblue)
+}
+
+
+.typed-text{
+  font-size : 3rem;
+  color : var(--primary-white);
+}
+
+.btn-main-offer {
+  border : 1px solid red;
+  text-transform: uppercase;
+  border-radius : 0;
+  padding : 0.625rem 0.75rem 0.75rem 0.75rem;
+  color : var(--primary-white);
+  margin : 2rem;
+}
+
+.btn-main-offer:hover{
+  text-decoration : none;
+  background-color: var(--primary-blue);
+  color : white;
+  transition: .2s ease-in-out;
+}
+
+
+.body-wrapper{
+  position : relative;
+  background: url(image.jpg);
+  background-size: cover;
+  background-position : center;
+  height : 160vh;
+  opacity: 0.7;
+}
+
+
+h1.aboutHeading{
+  font-weight : 700;
+  text-align :start;
+  margin-top:  60px;
+  margin-right : 20px;
+  color : white;
+  font-size : 60px;
+  margin-bottom : 5rem;
+}
+
+.col__2 {
+  max-width: 50%;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
   flex-direction: column;
+}
+
+.about{
+  color : white;
+  flex-wrap: wrap;
+  font-weight: 700;
+  font-size : 30px;
+  margin-bottom: 2rem;
+}
+
+p.aboutPara{
+  color : black;
+  flex-wrap: wrap;
+  font-weight: 300;
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+
+p.aboutPara1{
+  color : white;
+  flex-wrap: wrap;
+  font-weight: 700;
+  font-size : 30px;
+  margin-bottom: 8rem;
+}
+
+.row{
+  display: flex;
+  width : 100%;
+  margin-right : 70px;
+  flex-wrap : wrap;
+  overflow : hidden;
+  align-items : flex-start;
+  justify-content: center;
+}
+
+
+
+
+
+.lists{
+  color : black;
+  flex-wrap: wrap;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.component__space{
+  padding: 100px 0px;
+}
+
+h1.heading{
+  font-size : 60px;
+  text-align : center;
+  font-family : Poppins, sans-serif;
+  font-weight : 900;
+  margin-bottom : 10px;
+  color : whitesmoke;
+}
+
+.projects{
+  padding : 100px;
+  position :relative;
+}
+
+p.heading.p__color{
+  margin-bottom: 0;
+  margin-top: 40px;
+  text-align : center;
+  line-height : 1.2;
+  font-size: 2rem;
+  color : whitesmoke;
+  font-weight : 700;
+}
+
+.service__box{
+  border-radius : 10px;
+  width : 100%;
+  background-color: #191970;
+  padding : 55px;
+  transition: .4s ease;
+}
+
+.col__3{
+  max-width: 33.333333%;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-bottom: 170px;
+}
+.contentHeading{
+  color : orange;
+}
+
+.icon {
+  font-size : 54px;
+  font-weight : 400;
+  margin-bottom: 23px;
+  display : inline-flex;
+  color : white;
+}
+
+.contentParaHeading{
+  color : white;
+}
+
+
+
+.a {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.a-left {
+  flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.a-right {
+  flex: 1;
+  padding: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.a-card.bg {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #333;
+}
+
+.a-card {
+  width: 60%;
+  height: 70vh;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.a-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.a-award-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}
+
+.a-title {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.a-sub {
+  margin: 20px 0px;
+  font-size: 2rem;
+}
+
+.a-desc{
+    font-weight: 300;
+    font-size : 1.2rem;
+}
+
+.a-award{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.a-award-texts{
+    width: 70%;
+}
+
+.a-award-title{
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:480px) {
+    .a{
+      flex-direction: column;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .a-left {
+      width: 100%;
+    }
+
+    .a-card {
+      height: 30vh;
+    }
+
+    .a-card.bg, .a-award {
+      display: none;
+    }
+
+    .a-right{
+      padding: 20px;
+    }
+}
+
+
+.c {
+  height : 100vh;
+  position : relative;
+}
+
+.c-bg {
+  width : 30px;
+  height : 100%;
+  background-color : #191970;
+  position : absolute;
+}
+
+.c-wrapper {
+  padding: 50px;
+  display : flex;
+}
+
+.c-left {
+  flex : 1;
+}
+
+.c-right {
+  flex : 1;
+}
+
+.c-title {
+  font-size : 60px;
+  width : 80%;
+}
+
+.c-info-item {
+  display : flex;
+  align-items : center;
+  margin : 50px 0px;
+  font-weight : 300;
+  width : 100%;
+}
+
+.c-icon{
+  width : 30px;
+  height : 30px;
+  margin-right:  20px;
+}
+
+.c-desc{
+  font-size : 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .c-wrapper {
+    flex-direction: column;
+    padding: 10px 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .c-title {
+    font-size: 30px;
+  }
+
+  .c-info-item {
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+  .c-desc {
+    display: none;
+  }
+
+ 
+
+  form {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 35%;
+    height: 40px;
+    margin: 10px;
+    margin-left: 0;
+  }
+
+  button {
+    margin-top: 10px;
   }
 }
+
+
+
+
+.sent {
+  font-size : 1.9rem;
+  font-weight : 500;
+  color : #149414
+}
+
+
+
+@media only screen and (max-width: 768px){
+  .col__3 {
+      max-width: 50%;
+  }
+  }
+  @media only screen and (max-width: 425px){
+  .col__3 {
+      max-width: 100%;
+      margin : 1rem;
+  }
+  }
+
+  @media only screen and (max-width: 768px){
+    .col__2 {
+        max-width: 100%;
+    }
+    .service__box {
+      padding: 32px;
+  }
+  }
+
+
+  .copy {
+    height: 100vh;
+    position: relative;
+    background: url(real2.jpg);
+    opacity : 1;
+    position : relative;
+    background-size: cover;
+    background-position : center;
+  }
+  
+.c-name {
+  font-size : 2rem;
+  font-weight : 500;
+  color : white;
+}
+  
+  
+  .copy-wrapper {
+    padding: 100px;
+    display: flex;
+  }
+  
+  .copy-left {
+    flex: 1;
+  }
+
+  .copy-text {
+    color : white;
+    font-weight : 600;
+    font-size: 2rem;;
+  }
+
+  .copy-text-title{
+    color : blue;
+    font-weight : 80;
+    font-size : 1.7rem;
+  }
+
+  .copy-text-desc {
+    color : white;
+    font-weight : 400;
+    font-size : 1.5rem;
+  }
+  
+  .copy-right {
+    margin-top : 80px;
+    flex: 1;
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+  }
+  
+.c-card{
+  width: 70%;
+  height: 70vh;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.c-contact {
+  margin-top : 40px;
+}
+
+.c-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  .copy-title {
+    font-size: 40px;
+    width: 80%;
+    color : white;
+  }
+  
+  .c-info-item {
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+    font-weight: 300;
+    width: 70%;
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .copy-wrapper {
+      flex-direction: column;
+      padding: 0px 50px;
+    }
+  
+    .copy-title {
+      font-size: 30px;
+    }
+    .c-card {
+      height : 30vh;
+    }
+  }
+  
+  
+  
