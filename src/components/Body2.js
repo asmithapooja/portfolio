@@ -21,7 +21,15 @@ const Body2 = () => {
                 </p>
                 <p className="a-desc">
                     I'm learning Web,Mobile Development and DSA. I build projects in my spare time for fun. I really enjoy learning frameworks like React, React-Native. I also enjoy UI/UX design in general
-                    
+                    <p className="aboutPara">
+                                Skills and Experience
+                                <ul className='lists'>
+                                    <li>ReactJS</li>
+                                    <li>React-Native</li>
+                                    <li>JavaScript</li>
+                                    <li>Python</li>
+                                </ul>
+                            </p>
                 </p>
             </div>
         </div>
