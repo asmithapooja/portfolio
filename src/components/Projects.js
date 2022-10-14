@@ -25,10 +25,10 @@ const Projects = () => {
                             </div>
                             <div className="content">
                                 <h1 className="contentHeading">
-                                    Mobile Application
+                                    Frontend Dev.
                                 </h1>
                                 <p className="contentParaHeading">
-                                    I design and develop Full Stack Mobile Application
+                                    I design and build well structured and beautiful websites
                                 </p>
                             </div>
                         </div>
@@ -41,10 +41,10 @@ const Projects = () => {
                             </div>
                             <div className="content">
                                 <h1 className="contentHeading">
-                                    Web3
+                                    Web2.0
                                 </h1>
                                 <p className="contentParaHeading">
-                                    Learning Web3 in my spare time!
+                                    Learning Full Stack Development.
                                 </p>
                             </div>
                         </div>
@@ -57,10 +57,10 @@ const Projects = () => {
                             </div>
                             <div className="content">
                                 <h1 className="contentHeading">
-                                    Web Development
+                                    Tableau
                                 </h1>
                                 <p className="contentParaHeading">
-                                    I design and develop full stack web application
+                                    Creating great visualization.
                                 </p>
                             </div>
                         </div>

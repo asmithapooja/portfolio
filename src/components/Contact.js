@@ -36,19 +36,19 @@ const Contact = () => {
                     <div className='c-info'>
                         <div className='c-info-item'>
                             <img src={Phone} alt="" className='c-icon' />
-                            +91-9361485237
+                            +91-9003602255
                         </div>
                     </div>
                     <div className='c-info'>
                         <div className='c-info-item'>
                             <img src={Email} alt="" className='c-icon' />
-                            salman4javascript@gmail.com
+                            asmithapooja211@gmail.com
                         </div>
                     </div>
                     <div className='c-info'>
                         <div className='c-info-item'>
                             <img src={Address} alt="" className='c-icon' />
-                            101 Neithal Nagar, Kadambadi, Nagapattinam - 611001
+                            184, 3rd cross, Ambedkar Nagar, HopeFarm, Whitefield, Karnataka.
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import github from '../Github.jpeg';
+import github from '../Picture.jpg';
 
 const Body2 = () => {
     return (
@@ -17,17 +17,17 @@ const Body2 = () => {
             <div className="a-right">
                 <h1 className="a-title">About Me</h1>
                 <p className="a-sub">
-                    Keep It Clean & Simple - Development
+                    Keep It Clean & Simple
                 </p>
                 <p className="a-desc">
-                    I'm learning Web,Mobile Development and DSA. I build projects in my spare time for fun. I really enjoy learning frameworks like React, React-Native. I also enjoy UI/UX design in general
+                    I'm learning Web development. I build projects in my spare time for fun. I really enjoy learning new frameworks. I also enjoy UI/UX design in general
                     <p className="aboutPara">
                                 Skills and Experience
                                 <ul className='lists'>
-                                    <li>ReactJS</li>
-                                    <li>React-Native</li>
-                                    <li>JavaScript</li>
                                     <li>Python</li>
+                                    <li>JavaScript</li>
+                                    <li>ReactJs</li>
+                                    <li>Java</li>
                                 </ul>
                             </p>
                 </p>
